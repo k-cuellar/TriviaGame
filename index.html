@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!--javascript and jquery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/app.js"></script>
 
     <title>Trivia Game</title>
 </head>
@@ -34,12 +34,19 @@
             <div id="results"></div>
         </div>
         
-        <div class="row">
-            <div id="game">
-                <div id="remainingTime">Remaining Time: <span id="timer"></span></div>
-                <div class="text-center" id="question"></div>
+        <div class="row game">
+            <div id="remainingTime">Remaining Time: <span id="timer"></span></div>
+            <div class="text-center" id="question"></div>
+        </div>
+
+        <div class="row game">
+           <div class="col-md-3"></div>
+
+           <div class="col-md-6">
                 <div id="answers"></div>
-            </div>
+           </div>
+
+           <div class="col-md-3"></div>
         </div>
 
 
