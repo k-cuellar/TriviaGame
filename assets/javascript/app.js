@@ -10,7 +10,6 @@ $(document).ready(function(){
 
     //onclick function for answer class
     $("body").on("click", ".answer", function(){
-        preventDefault();
         //create var for selected answer (this)
         var selectedAnswer = $(this).text();
         //if selected answer === game.correctAnswers[currentQuestion]
@@ -117,7 +116,7 @@ $(document).ready(function(){
     
         //timer function
         timerCount: function(){
-            if(this.timerCountdown) clearInterval(this.timerCountdown)
+            if(this.timerCountdown) clearInterval(this.timerCountdown);
             //set interval for 1 second
             this.timerCountdown = setInterval(fifteenSeconds, 1000);
 
